@@ -15,7 +15,7 @@ function ctest:new(cwd)
 
   local ctest_roots = scandir.scan_dir(cwd, {
     respect_gitignore = false,
-    depth = 3, -- NOTE: support multi-config projects
+    depth = 4, -- NOTE: support multi-config projects
     search_pattern = "CTestTestfile.cmake",
     silent = true,
   })
